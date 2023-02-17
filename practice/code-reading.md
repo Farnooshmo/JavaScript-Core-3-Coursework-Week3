@@ -14,7 +14,9 @@ Take a look at the following code:
 7    console.log(x);
 ```
 
-Explain why line 4 and line 6 output different numbers.
+Explain why line 4 and line 6 output different numbers. 
+The first console.log(x), gives 2 because x has been declared in the function scope. 
+The second console.log(x), gives 1 because x has been declared as a global scope.
 
 ## Question 2
 
@@ -34,6 +36,9 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+The output of console.log(f1()) is 10, because x has been declared in a global scope and therefore when the function has logged outside the function, we can see the output.
+The output of console.log(y) is undefined, because y has been declared in a function scope and therefore it can not be accessed out of the function. 
 
 ## Question 3
 
@@ -62,3 +67,4 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+The out put will be 9 and 10.
